@@ -34,6 +34,8 @@ class RestaurantSection extends StatelessWidget {
               ],
             ),
           ),
+
+          
           Expanded(
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -47,11 +49,11 @@ class RestaurantSection extends StatelessWidget {
                         ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Container(
-                            height: 100, // Tinggi gambar
-                            width: 100, // Lebar gambar
+                            height: 100,
+                            width: 100,
                             child: Image.asset(
                               restaurants[index].imageUrl,
-                              fit: BoxFit.cover, // Ini akan memastikan gambar menyesuaikan dengan ukuran yang ditentukan
+                              fit: BoxFit.cover, 
                             ),
                           ),
                         ),
